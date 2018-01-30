@@ -63,13 +63,21 @@ let anne = new Heroes({
 //   console.log(hero);
 // });
 
-// UPDATE data (findById,findOneAndUpdate,findByIdAndUpdate)
-Heroes.findOneAndUpdate({
-  name: 'Tom'
-}, {
-  name: 'Brooklyn',
-  age: 31
-}, (err, hero) => {
+// // UPDATE data (findById,findOneAndUpdate,findByIdAndUpdate)
+// Heroes.findOneAndUpdate({
+//   name: 'Tom'
+// }, {
+//   name: 'Brooklyn',
+//   age: 31
+// }, (err, hero) => {
+//   if (err) throw err;
+//   console.log(hero);
+// });
+
+// REMOVE data (find remove, findOneAndRemove, findByIdAndRemove)
+Heroes.findOneAndRemove({
+  name: 'Anne'
+}, (err) => {
   if (err) throw err;
-  console.log(hero);
+  console.log('Hero has been deleted');
 });
