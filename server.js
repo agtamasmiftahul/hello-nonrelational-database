@@ -43,11 +43,11 @@ let anne = new Heroes({
 //   console.log('Heroes saved successfully!');
 // });
 
-// // GET all data (find)
-// Heroes.find((err, heroes) => {
-//   if (err) throw err;
-//   console.log(heroes);
-// });
+// GET all data (find)
+Heroes.find((err, heroes) => {
+  if (err) throw err;
+  console.log(heroes);
+});
 
 // // GET one data (find -> property)
 // Heroes.find({
@@ -74,10 +74,10 @@ let anne = new Heroes({
 //   console.log(hero);
 // });
 
-// REMOVE data (find remove, findOneAndRemove, findByIdAndRemove)
-Heroes.findOneAndRemove({
-  name: 'Anne'
-}, (err) => {
-  if (err) throw err;
-  console.log('Hero has been deleted');
-});
+// // REMOVE data (find remove, findOneAndRemove, findByIdAndRemove)
+// Heroes.findOneAndRemove({
+//   name: 'Anne'
+// }, (err) => {
+//   if (err) throw err;
+//   console.log('Hero has been deleted');
+// });
