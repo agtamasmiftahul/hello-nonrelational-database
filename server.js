@@ -36,9 +36,29 @@ let anne = new Heroes({
   }
 });
 
-// POST data (save,create,insert)
-anne.save(function(err) {
-  if (err) throw err;
+// // POST data (save,create,insert)
+// anne.save(function(err) {
+//   if (err) throw err;
+//
+//   console.log('Heroes saved successfully!');
+// });
 
-  console.log('Heroes saved successfully!');
+// GET all data (find)
+Heroes.find((err, heroes) => {
+  if (err) throw err;
+  console.log(heroes);
 });
+
+// // GET one data (find -> property)
+// Heroes.find({
+//   name: 'Tom'
+// }, (err, hero) => {
+//   if (err) throw err;
+//   console.log(hero);
+// });
+//
+// // GET by id (finById)
+// Heroes.findById('5a6feaf42f20d17834c872b3', (err, hero) => {
+//   if (err) throw err;
+//   console.log(hero);
+// });
