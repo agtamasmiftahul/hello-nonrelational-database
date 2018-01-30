@@ -1,0 +1,27 @@
+{
+  "name": "hello-nonrelational-database",
+  "version": "1.0.0",
+  "description": "Simple mongoDB CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-dev server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agtamasmiftahul/hello-nonrelational-database.git"
+  },
+  "keywords": [
+    "mongoose",
+    "nodejs"
+  ],
+  "author": "agtamasmiftahul37@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agtamasmiftahul/hello-nonrelational-database/issues"
+  },
+  "homepage": "https://github.com/agtamasmiftahul/hello-nonrelational-database#readme",
+  "dependencies": {
+    "mongoose": "^5.0.2"
+  }
+}
