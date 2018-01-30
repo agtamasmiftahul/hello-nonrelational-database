@@ -37,7 +37,7 @@ let anne = new Heroes({
 });
 
 // // POST data (save,create,insert)
-// anne.save(function(err) {
+// anne.save((err) => {
 //   if (err) throw err;
 //
 //   console.log('Heroes saved successfully!');
