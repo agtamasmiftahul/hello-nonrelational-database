@@ -43,11 +43,11 @@ let anne = new Heroes({
 //   console.log('Heroes saved successfully!');
 // });
 
-// GET all data (find)
-Heroes.find((err, heroes) => {
-  if (err) throw err;
-  console.log(heroes);
-});
+// // GET all data (find)
+// Heroes.find((err, heroes) => {
+//   if (err) throw err;
+//   console.log(heroes);
+// });
 
 // // GET one data (find -> property)
 // Heroes.find({
@@ -62,3 +62,14 @@ Heroes.find((err, heroes) => {
 //   if (err) throw err;
 //   console.log(hero);
 // });
+
+// UPDATE data (findById,findOneAndUpdate,findByIdAndUpdate)
+Heroes.findOneAndUpdate({
+  name: 'Tom'
+}, {
+  name: 'Brooklyn',
+  age: 31
+}, (err, hero) => {
+  if (err) throw err;
+  console.log(hero);
+});
