@@ -1,6 +1,9 @@
 const mongoose = require(`mongoose`);
 const Schema = mongoose.Schema;
 
+/*
+ * Create heroes Schema
+ */
 let heroesSchema = new Schema({
   name: {
     type: String,
@@ -24,7 +27,7 @@ let heroesSchema = new Schema({
     required: true
   }
 }, {
-  versionKey: false
+  versionKey: false // Don't create __v
 });
 
 module.exports = mongoose.model(`Heroes`, heroesSchema);
