@@ -1,27 +1,49 @@
 {
   "name": "hello-nonrelational-database",
   "version": "1.0.0",
-  "description": "Simple mongoDB CRUD",
-  "main": "index.js",
+  "description": "Simple API use express and mongoose",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^2.1.4",
+    "bluebird": "^3.5.0",
+    "bson": "^1.0.4",
+    "debug": "^2.6.9",
+    "express": "^4.16.2",
+    "kareem": "^2.0.2",
+    "lodash": "^4.17.4",
+    "lodash.get": "^4.4.2",
+    "mongodb": "^3.0.1",
+    "mongodb-core": "^3.0.1",
+    "mongoose": "^5.0.2",
+    "mongoose-legacy-pluralize": "^1.0.1",
+    "mpath": "^0.3.0",
+    "mquery": "^3.0.0",
+    "ms": "^2.0.0",
+    "regexp-clone": "^0.0.1",
+    "require_optional": "^1.0.1",
+    "resolve-from": "^2.0.0",
+    "semver": "^5.5.0",
+    "sliced": "^1.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node-dev server.js"
+    "start": "node ./bin/www",
+    "dev": "node-dev ./bin/www"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/agtamasmiftahul/hello-nonrelational-database.git"
   },
   "keywords": [
-    "mongoose",
-    "nodejs"
+    "expressjs",
+    "nodejs",
+    "mongodb"
   ],
   "author": "agtamasmiftahul37@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/agtamasmiftahul/hello-nonrelational-database/issues"
   },
-  "homepage": "https://github.com/agtamasmiftahul/hello-nonrelational-database#readme",
-  "dependencies": {
-    "mongoose": "^5.0.2"
-  }
+  "homepage": "https://github.com/agtamasmiftahul/hello-nonrelational-database#readme"
 }
